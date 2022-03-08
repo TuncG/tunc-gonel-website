@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+
 var home = { name: "Home", dir: "/" };
 var projects = {
   name: "Projects",
@@ -34,6 +35,10 @@ var pages = [home, projects, contact, about];
 export default function Header() {
   const [navBarActive, setNavBarActive] = useState("Home");
 
+  const navStateHandler = (name) => {
+    setNavBarActive(name);
+  };
+
   // make the links here
   const renderLinks = (page) => {
     if (checkActive(page.name, navBarActive) == true) {
@@ -43,13 +48,13 @@ export default function Header() {
             key={page.name}
             sx={{
               "&.MuiButton-text": { color: "#3273DC" },
-              fontSize: "18px",
-              my: 0,
+              fontSize: "16px",
+              mr: 3,
               color: "#757575",
               display: "block",
               textTransform: "none",
               ":hover": {
-                backgroundColor: "#F4F4F4",
+                backgroundColor: "#f9f9f9",
                 color: "black",
               },
             }}
@@ -64,15 +69,19 @@ export default function Header() {
           <Button
             key={page.name}
             sx={{
-              my: 0,
-              fontSize: "18px",
+              mr: 3,
+
+              fontSize: "16px",
               color: "#757575",
               display: "block",
               textTransform: "none",
               ":hover": {
-                backgroundColor: "#F4F4F4",
+                backgroundColor: "#f9f9f9" /* F4F4F4 */,
                 color: "black",
               },
+            }}
+            onClick={() => {
+              navStateHandler(page.name);
             }}
           >
             {page.name}
@@ -83,8 +92,14 @@ export default function Header() {
   };
 
   return (
-    <Box>
-      <AppBar position="static" style={{ m: "auto", background: "#F4F4F4" }}>
+    <Container maxWidth="lg">
+      <AppBar
+        elevation={1}
+        position="static"
+        style={{
+          background: "#f9f9f9",
+        }}
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Box
@@ -110,13 +125,25 @@ export default function Header() {
                 component="div"
                 sx={{
                   color: "#757575",
-                  my: 0,
-                  mr: 2,
+                  mr: 4,
                   display: { xs: "none", md: "flex" },
                 }}
               >
                 Logo
               </Typography>
+              {/* <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{
+                  color: "#757575",
+                  my: 1,
+                  mr: 2,
+                  display: { xs: "none", md: "flex" },
+                }}
+              >
+                Logo
+              </Typography> */}
               {/* {pages.map((page) => (
                 <Button
                   key={page.name}
@@ -140,6 +167,6 @@ export default function Header() {
           </Toolbar>
         </Container>
       </AppBar>
-    </Box>
+    </Container>
   );
 }
