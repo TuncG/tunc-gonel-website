@@ -3,24 +3,24 @@ import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
-import { shadows } from "@mui/system";
-
-/* var home = { name: "Home" };
+import { Link } from "react-router-dom";
+var home = { name: "Home", dir: "/" };
 var projects = {
   name: "Projects",
+  dir: "/projects",
 };
 var contact = {
   name: "Contact",
-}; */
+  dir: "/contact",
+};
+
+var about = {
+  name: "About",
+  dir: "/about",
+};
 
 const checkActive = (name, currentState) => {
   if (name == currentState) {
@@ -29,51 +29,55 @@ const checkActive = (name, currentState) => {
   return false;
 };
 
-var pages = ["Home", "Projects", "Contact", "About"];
+var pages = [home, projects, contact, about];
 
 export default function Header() {
   const [navBarActive, setNavBarActive] = useState("Home");
 
   // make the links here
-  const renderLinks = (name) => {
-    if (checkActive(name, navBarActive) == true) {
+  const renderLinks = (page) => {
+    if (checkActive(page.name, navBarActive) == true) {
       return (
-        <Button
-          key={name}
-          sx={{
-            "&.MuiButton-text": { color: "#3273DC" },
-            fontSize: "18px",
-            my: 0,
-            color: "#757575",
-            display: "block",
-            textTransform: "none",
-            ":hover": {
-              backgroundColor: "#F4F4F4",
-              color: "black",
-            },
-          }}
-        >
-          {name}
-        </Button>
+        <Link to={page.dir} style={{ textDecoration: "none" }}>
+          <Button
+            key={page.name}
+            sx={{
+              "&.MuiButton-text": { color: "#3273DC" },
+              fontSize: "18px",
+              my: 0,
+              color: "#757575",
+              display: "block",
+              textTransform: "none",
+              ":hover": {
+                backgroundColor: "#F4F4F4",
+                color: "black",
+              },
+            }}
+          >
+            {page.name}
+          </Button>
+        </Link>
       );
     } else {
       return (
-        <Button
-          key={name}
-          sx={{
-            my: 0,
-            fontSize: "18px",
-            color: "#757575",
-            display: "block",
-            textTransform: "none",
-            ":hover": {
-              backgroundColor: "#F4F4F4",
-              color: "black",
-            },
-          }}
-        >
-          {name}
-        </Button>
+        <Link to={page.dir} style={{ textDecoration: "none" }}>
+          <Button
+            key={page.name}
+            sx={{
+              my: 0,
+              fontSize: "18px",
+              color: "#757575",
+              display: "block",
+              textTransform: "none",
+              ":hover": {
+                backgroundColor: "#F4F4F4",
+                color: "black",
+              },
+            }}
+          >
+            {page.name}
+          </Button>
+        </Link>
       );
     }
   };
