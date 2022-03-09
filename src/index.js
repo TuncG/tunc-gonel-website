@@ -16,6 +16,11 @@ const themeLight = createTheme({
       default: "#f9f9f9",
     },
   },
+  typography: {
+    allVariants: {
+      fontFamily: "Arial",
+    },
+  },
 });
 
 ReactDOM.render(

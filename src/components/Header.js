@@ -48,7 +48,7 @@ export default function Header() {
             key={page.name}
             sx={{
               "&.MuiButton-text": { color: "#3273DC" },
-              fontSize: "16px",
+              fontSize: "14px",
               mr: 3,
               color: "#757575",
               display: "block",
@@ -70,8 +70,7 @@ export default function Header() {
             key={page.name}
             sx={{
               mr: 3,
-
-              fontSize: "16px",
+              fontSize: "14px",
               color: "#757575",
               display: "block",
               textTransform: "none",
