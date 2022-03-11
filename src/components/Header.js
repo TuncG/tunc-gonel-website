@@ -41,6 +41,7 @@ export default function Header() {
 
   // make the links here
   const renderLinks = (page) => {
+    /* Sets the current link to blue color */
     if (checkActive(page.name, navBarActive) == true) {
       return (
         <Link to={page.dir} style={{ textDecoration: "none" }}>
@@ -48,13 +49,13 @@ export default function Header() {
             key={page.name}
             sx={{
               "&.MuiButton-text": { color: "#3273DC" },
-              fontSize: "14px",
+              fontSize: "15px",
               mr: 3,
               color: "#757575",
               display: "block",
               textTransform: "none",
               ":hover": {
-                backgroundColor: "#f9f9f9",
+                backgroundColor: "#FFFFFF",
                 color: "black",
               },
             }}
@@ -64,18 +65,19 @@ export default function Header() {
         </Link>
       );
     } else {
+      /* Normal link */
       return (
         <Link to={page.dir} style={{ textDecoration: "none" }}>
           <Button
             key={page.name}
             sx={{
               mr: 3,
-              fontSize: "14px",
+              fontSize: "15px",
               color: "#757575",
               display: "block",
               textTransform: "none",
               ":hover": {
-                backgroundColor: "#f9f9f9" /* F4F4F4 */,
+                backgroundColor: "#FFFFFF" /* F4F4F4 */,
                 color: "black",
               },
             }}
@@ -96,7 +98,7 @@ export default function Header() {
         elevation={1}
         position="static"
         style={{
-          background: "#f9f9f9",
+          background: "#FFFFFF",
         }}
       >
         <Container maxWidth="xl">

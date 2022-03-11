@@ -13,7 +13,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 const themeLight = createTheme({
   palette: {
     background: {
-      default: "#f9f9f9",
+      default: "#FFFFFF",
     },
   },
   typography: {

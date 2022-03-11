@@ -1,8 +1,13 @@
 import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+
 export default function Projects() {
   return (
-    <div>
-      <Typography variant="h2"> Projects Page</Typography>
-    </div>
+    <Container maxWidth="lg">
+      <Typography mt={10} variant="h4">
+        {" "}
+        Projects
+      </Typography>
+    </Container>
   );
 }
