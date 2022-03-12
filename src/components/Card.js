@@ -9,8 +9,8 @@ import Links from "@mui/material/Link";
 
 export default function MediaCard({ content }) {
   return (
-    <Links href={content.link} underline="none">
-      <Card sx={{ maxWidth: 500, minHeight: 225, mt: 5 }} elevation={4}>
+    <Card sx={{ maxWidth: 500, minHeight: 225, mt: 5 }} elevation={4}>
+      <Links href={content.link} underline="none">
         <CardActionArea>
           {/* <CardMedia
           component="img"
@@ -33,13 +33,16 @@ export default function MediaCard({ content }) {
             </Typography>
           </CardContent>
         </CardActionArea>
+      </Links>
+
+      <Links href={content.buttonlink} underline="none">
         <CardActions>
           <Button size="small" color="primary">
-            Code
+            {content.button}
           </Button>
         </CardActions>
-      </Card>
-    </Links>
+      </Links>
+    </Card>
   );
 }
 /*  Website that tracks news articles about popular tech compagnies. Made

@@ -10,6 +10,8 @@ import About from "./pages/About";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
+const HeaderContext = React.createContext("Home");
+
 const themeLight = createTheme({
   palette: {
     background: {

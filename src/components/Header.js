@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import { contextFunctions } from "../components/HeaderContext";
 
 var home = { name: "Home", dir: "/" };
 var projects = {
@@ -38,7 +39,13 @@ export default function Header() {
   const navStateHandler = (name) => {
     setNavBarActive(name);
   };
+  /* Get the value from the context */
+  var currentHeader = React.useContext(contextFunctions.HeaderContext);
 
+  /* Compare the value with the current state, if different change it */
+  if (navBarActive != currentHeader) {
+    navStateHandler(currentHeader);
+  }
   // make the links here
   const renderLinks = (page) => {
     /* Sets the current link to blue color */
@@ -82,7 +89,10 @@ export default function Header() {
               },
             }}
             onClick={() => {
-              navStateHandler(page.name);
+              /* Once the button is clicked run the setHeaderContext function to get a new context with the new page.name and set it to the old context */
+              contextFunctions.HeaderContext =
+                contextFunctions.setHeaderContext(page.name);
+              setNavBarActive(page.name); /* run rerender */
             }}
           >
             {page.name}
