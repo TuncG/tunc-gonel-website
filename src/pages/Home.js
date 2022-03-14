@@ -8,7 +8,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DriveFolderUploadIcon from "@mui/icons-material/DriveFolderUpload";
 import { Link } from "react-router-dom";
 import Links from "@mui/material/Link";
-import { contextFunctions } from "../components/HeaderContext";
 
 export default function Home() {
   return (
@@ -46,7 +45,7 @@ export default function Home() {
         </Typography>
       </Box>
 
-      {/* Icons */}
+      {/* Icons Section */}
       <Box mt={5} sx={{ mx: "auto", width: 500, display: "flex" }}>
         <Links href="https://www.linkedin.com/in/tunc-gonel" underline="hover">
           <Box ml={8} mr={5} sx={{ display: "flex", color: "#212121" }}>
@@ -87,11 +86,6 @@ export default function Home() {
           <Link
             to={"/contact"}
             style={{ textDecoration: "none", color: "#3273DC" }}
-            onClick={() => {
-              /* Once the button is clicked run the setHeaderContext function to get a new context with the new page.name and set it to the old context */
-              contextFunctions.HeaderContext =
-                contextFunctions.setHeaderContext("Contact");
-            }}
           >
             {" "}
             here.

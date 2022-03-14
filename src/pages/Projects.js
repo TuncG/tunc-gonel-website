@@ -39,7 +39,7 @@ var content = {
   },
   utfr: {
     title: "Univeristy of Toronto Formula Racing",
-    main: "As a member of my univeristies formula SAE team I develop firmware for our race car. I mostly program in C/Arduino writing code for various microcontrollers. Unfortunately I can not provide a link to the code as we are currenlty using it for our current car!",
+    main: "As a member of my univeristies formula SAE team I develop firmware for our race car. I mostly program in C/Arduino writing code for various microcontrollers. Unfortunately I can not provide a link to the code as we are currenlty using it for our current car !",
     color: "error.light",
     link: "https://fsaeutoronto.ca/",
     button: "View UTFR Website",
@@ -56,7 +56,7 @@ export default function Projects() {
       </Typography>
       <Typography mt={2} variant="body2">
         Below you can find all my projects. Click on the card to view my code on
-        github. Feel free to contact me for any questions.
+        github.
       </Typography>
 
       <Box mb={10} sx={{ display: "flex" }}>

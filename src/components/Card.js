@@ -12,18 +12,13 @@ export default function MediaCard({ content }) {
     <Card sx={{ maxWidth: 500, minHeight: 225, mt: 5 }} elevation={4}>
       <Links href={content.link} underline="none">
         <CardActionArea>
-          {/* <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        /> */}
           <Box
             sx={{
               height: 40,
               backgroundColor: content.color,
             }}
           ></Box>
+          {/* Card main text and title */}
           <CardContent sx={{ minHeight: 150 }}>
             <Typography gutterBottom variant="h5" component="div">
               {content.title}
@@ -34,7 +29,7 @@ export default function MediaCard({ content }) {
           </CardContent>
         </CardActionArea>
       </Links>
-
+      {/* Create the card button below */}
       <Links href={content.buttonlink} underline="none">
         <CardActions>
           <Button size="small" color="primary">
@@ -45,6 +40,3 @@ export default function MediaCard({ content }) {
     </Card>
   );
 }
-/*  Website that tracks news articles about popular tech compagnies. Made
-          with React and the Material UI library. The NewsApi api was used in
-          retreiving the data displayed. */
