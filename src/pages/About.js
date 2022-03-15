@@ -41,19 +41,20 @@ export default function About() {
           <Typography variant="body1">
             I'm a computer science student studying at the University of
             Toronto. I have been programming since I was 16 years old and now
-            proficient with over 4 different programming langugaes. My strong
+            proficient with over 4 different programming languages. My strong
             foundation in programming works perfectly with my underlying
-            philosophy to set goals, to keep on learning new concepts. I want to
-            be able to not only create code that is effiecent but innovative and
-            change the field I'm working in. Currently developing in React and
-            PHP/Node.js.
+            philosophy to set goals, to keep on learning new concepts. Currently
+            developing in React and PHP/Node.js.
           </Typography>{" "}
           <Typography sx={{ marginTop: 2 }} variant="body1">
             When I'm not programming or in school, I like to lift weights 5-6x
             week and play drop in volleyball offered at my Univeristy. I also
             follow the world of Formula 1 pretty religiously (Go Vettel!) and I
-            love cars in general. One day I hope to see a grand prix live and
-            own a 458 or GT3 (Probably both).
+            love cars in general. Which is why I'm apart of my school's{" "}
+            <Links href="https://fsaeutoronto.ca/" underline="hover">
+              Formula SAE{" "}
+            </Links>
+            team as a firmware developer.
           </Typography>
           {/*  <Typography sx={{ marginTop: 2 }} variant="body1">
             Feel free to reach out to me

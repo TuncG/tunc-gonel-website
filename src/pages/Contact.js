@@ -13,8 +13,15 @@ export default function Contact() {
         </Typography>
         <Typography mb={3}>
           {" "}
-          The best way to reach me is email or through LinkedIn. I'm always
-          looking for new opportunities, feel free to reach out.
+          The best way to reach me is email or through{" "}
+          <Links
+            href="https://www.linkedin.com/in/tunc-gonel"
+            underline="hover"
+          >
+            {" "}
+            LinkedIn.{" "}
+          </Links>{" "}
+          I'm always looking for new opportunities, feel free to reach out.
         </Typography>
         <Box sx={{ borderTop: 2, color: "#dcdcdc" }}></Box>
 
