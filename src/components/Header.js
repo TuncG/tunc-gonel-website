@@ -120,16 +120,7 @@ export default function Header() {
               }}
             ></Box>
 
-            <Box
-              sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
-            ></Box>
-
-            <Box
-              sx={{
-                flexGrow: 1,
-                display: { xs: "none", md: "flex" },
-              }}
-            >
+            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               <Typography
                 variant="h6"
                 noWrap
@@ -140,39 +131,16 @@ export default function Header() {
                   display: { xs: "none", md: "flex" },
                 }}
               >
-                Logo
+                Tunc Gonel
               </Typography>
-              {/* <Typography
-                variant="h6"
-                noWrap
-                component="div"
-                sx={{
-                  color: "#757575",
-                  my: 1,
-                  mr: 2,
-                  display: { xs: "none", md: "flex" },
-                }}
-              >
-                Logo
-              </Typography> */}
-              {/* {pages.map((page) => (
-                <Button
-                  key={page.name}
-                  sx={{
-                    my: 1,
-                    color: "#757575",
-                    display: "block",
-                    textTransform: "none",
-                    ":hover": {
-                      backgroundColor: "#fff",
-                      color: "red",
-                    },
-                  }}
-                >
-                  {page.name}
-                </Button>
-              ))} */}
+            </Box>
 
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+              }}
+            >
               {pages.map((page) => renderLinks(page))}
             </Box>
           </Toolbar>

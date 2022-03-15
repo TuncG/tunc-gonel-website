@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import List from "@mui/material/List";
 import CircleIcon from "@mui/icons-material/Circle";
 import ListItem from "@mui/material/ListItem";
-
 import Links from "@mui/material/Link";
 
 var linkedIn = {
@@ -52,9 +51,9 @@ export default function About() {
           <Typography sx={{ marginTop: 2 }} variant="body1">
             When I'm not programming or in school, I like to lift weights 5-6x
             week and play drop in volleyball offered at my Univeristy. I also
-            follow the world Formula 1 pretty religiously (Go Vettel!) and I
+            follow the world of Formula 1 pretty religiously (Go Vettel!) and I
             love cars in general. One day I hope to see a grand prix live and
-            own my 458 or GT3 (Probably both).
+            own a 458 or GT3 (Probably both).
           </Typography>
           {/*  <Typography sx={{ marginTop: 2 }} variant="body1">
             Feel free to reach out to me
