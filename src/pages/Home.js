@@ -34,14 +34,14 @@ export default function Home() {
         </Box>
       </Box>
       {/* Text  */}
-      <Box sx={{ mx: "auto", width: 500 }}>
+      <Box sx={{ mx: "auto", width: 600 }}>
         <Typography variant="h6" mt={1}>
-          Computer Science student at the Univeristy of Toronto
+          GIS & Computer Science student at the Univeristy of Toronto
         </Typography>
 
         <Typography mt={2} variant="body2">
           I enjoy making websites, apps and automation tools. Mostly, React &
-          PHP.
+          SwiftUI.
         </Typography>
       </Box>
 

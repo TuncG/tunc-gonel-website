@@ -18,12 +18,31 @@ export default function MediaCard({ content }) {
               backgroundColor: content.color,
             }}
           ></Box>
+
           {/* Card main text and title */}
           <CardContent sx={{ minHeight: 150 }}>
             <Typography gutterBottom variant="h5" component="div">
               {content.title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+
+            <Box
+              sx={{
+                height: 20,
+                width: 200,
+
+                borderRadius: 1,
+              }}
+            >
+              <Typography
+                sx={{ mb: 1.5 }}
+                variant="body3"
+                color="text.secondary"
+              >
+                {content.subtitle}
+              </Typography>
+            </Box>
+
+            <Typography mt={1} variant="body1" color="black">
               {content.main}
             </Typography>
           </CardContent>

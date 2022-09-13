@@ -39,16 +39,16 @@ export default function About() {
         {/* Text Boxes */}
         <Box sx={{ maxWidth: 600, marginTop: 2 }}>
           <Typography variant="body1">
-            I'm a computer science student studying at the University of
-            Toronto. I have been programming since I was 16 years old and now
-            proficient with over 4 different programming languages. My strong
-            foundation in programming works perfectly with my underlying
-            philosophy to set goals, to keep on learning new concepts. Currently
-            developing in React and PHP/Node.js.
+            I'm a computer science and geographic information systems student
+            studying at the University of Toronto. I have been programming since
+            I was 16 years old and now proficient with over 4 different
+            programming languages. My strong foundation in programming works
+            perfectly with my underlying philosophy to set goals, to keep on
+            learning new concepts. Currently developing in React and SwiftUI.
           </Typography>{" "}
           <Typography sx={{ marginTop: 2 }} variant="body1">
             When I'm not programming or in school, I like to lift weights 5-6x
-            week and play drop in volleyball offered at my Univeristy. I also
+            week and play drop in volleyball offered at my univeristy. I also
             follow the world of Formula 1 pretty religiously (Go Vettel!) and I
             love cars in general. Which is why I'm apart of my school's{" "}
             <Links href="https://fsaeutoronto.ca/" underline="hover">
