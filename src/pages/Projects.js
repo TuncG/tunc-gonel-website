@@ -43,7 +43,7 @@ var content = {
   },
   foodapp: {
     title: "FastFood Delivery",
-    main: "Uber like food delivery website. Developed using React and custom CSS styling using CSS modules. Mostly showing off my knoweldge of various built in React hooks such as useState, useContext, useReducer, etc.",
+    main: "Uber like food delivery website. Developed using React and custom CSS styling using CSS modules. Mostly showing off my knowledge of various built in React hooks such as useState, useContext, useReducer, etc.",
     subtitle: "React, JS, CSS",
     color: "success.light",
     link: "https://github.com/TuncG/Food-Order-WebReact",
