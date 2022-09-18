@@ -36,7 +36,7 @@ export default function Home() {
       {/* Text  */}
       <Box sx={{ mx: "auto", width: 600 }}>
         <Typography variant="h6" mt={1}>
-          GIS & Computer Science student at the Univeristy of Toronto
+          GIS & Computer Science student at the University of Toronto
         </Typography>
 
         <Typography mt={2} variant="body2">
