@@ -12,7 +12,7 @@ var content = {
     color: "primary.light",
     link: "https://github.com/TuncG/NewsTrack",
     button: "View Code",
-    buttonlink: "https://github.com/TuncG/NewsTrack",
+    buttonlink: "https://newstrack.tuncgonel.ca/admin/pages/DashboardPage",
   },
   tuncgonel: {
     title: "Personal Website",
@@ -39,7 +39,7 @@ var content = {
     color: "error.dark",
     link: "https://github.com/TuncG/reserveUpApp",
     button: "View Code",
-    buttonlink: "https://newstrack.tuncgonel.ca/admin/pages/DashboardPage",
+    buttonlink: "https://github.com/TuncG/reserveUpApp",
   },
   foodapp: {
     title: "FastFood Delivery",
