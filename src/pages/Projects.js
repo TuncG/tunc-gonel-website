@@ -39,7 +39,7 @@ var content = {
     color: "error.dark",
     link: "https://github.com/TuncG/reserveUpApp",
     button: "View Code",
-    buttonlink: "https://github.com/TuncG/reserveUpApp",
+    buttonlink: "https://newstrack.tuncgonel.ca/admin/pages/DashboardPage",
   },
   foodapp: {
     title: "FastFood Delivery",
@@ -48,7 +48,7 @@ var content = {
     color: "success.light",
     link: "https://github.com/TuncG/Food-Order-WebReact",
     button: "View Live Demo",
-    buttonlink: "https://tuncfastfood.herokuapp.com/",
+    buttonlink: "https://fastfood.tuncgonel.ca/",
   },
   turingtest: {
     title: "Turing Test",
